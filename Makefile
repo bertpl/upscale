@@ -5,6 +5,7 @@ help:
 	@echo ''
 	@echo '  format                         Format code using ruff (excluding notebooks).'
 	@echo '  format-single-file             Format single file using ruff. Useful in e.g. pycharm to automatically trigger formatting on file save.'
+	@echo '  test             				Run tests using pytest.'
 	@echo ''
 	@echo 'Options:'
 	@echo ''
@@ -17,3 +18,6 @@ format:
 format-single-file:
 	ruff format ${file_path};
 	ruff check --fix ${file_path};
+
+test:
+	pytest .;

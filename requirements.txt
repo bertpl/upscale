@@ -1,12 +1,24 @@
-# --- Stable Diffusion & co ---
+# --- Stable Diffusion & related ---
 diffusers >= 0.34.0                             # HuggingFace Diffusers library to run Stable Diffusion models
 transformers[torch, torch-vision] >= 4.53.0     # HuggingFace Transformers library to run Stable Diffusion models
+torch >= 2.7.1                                  # Add as direct dependency so we can check for GPU support
+
+# --- graphics ---
 pillow >= 11.2.0            # Image processing
-torch >= 2.7.1              # Add as direct dependency so we can check for GPU support
+opencv-python >= 4.12       # OpenCV for image processing
 
 # --- misc ---
 click >= 8.2.0              # CLI interface
 tqdm >= 4.67.0              # progress bars
 
+# --- math ---
+numpy >= 2.0.0              # Numerical operations
+
 # --- dev dependencies ---
 ruff >= 0.12.1              # Formatting
+notebook >= 7.4.4           # Jupyter notebooks
+jupyterlab >= 4.4.4         # Jupyter notebooks
+ipywidgets                  # Jupyter widgets
+
+# --- testing ---
+pytest >= 8.4.0              # Testing framework

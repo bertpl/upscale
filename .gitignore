@@ -210,3 +210,5 @@ __marimo__/
 .idea
 _data/
 .DS_Store
+notebooks
+*.png
