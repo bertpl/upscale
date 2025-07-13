@@ -1,0 +1,12 @@
+# --- Stable Diffusion & co ---
+diffusers >= 0.34.0                             # HuggingFace Diffusers library to run Stable Diffusion models
+transformers[torch, torch-vision] >= 4.53.0     # HuggingFace Transformers library to run Stable Diffusion models
+pillow >= 11.2.0            # Image processing
+torch >= 2.7.1              # Add as direct dependency so we can check for GPU support
+
+# --- misc ---
+click >= 8.2.0              # CLI interface
+tqdm >= 4.67.0              # progress bars
+
+# --- dev dependencies ---
+ruff >= 0.12.1              # Formatting
